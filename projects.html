@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finn Rintamaki — Projects</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600&family=Carlito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<nav>
+  <a href="index.html" class="nav-brand">FINN RINTAMAKI <span>/ EPORTFOLIO</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">About Me</a></li>
+    <li><a href="personal.html">Personal</a></li>
+    <li><a href="professional.html">Professional</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="page-header">
+  <div class="section-inner">
+    <div class="eyebrow">Portfolio</div>
+    <h1>Projects</h1>
+  </div>
+</header>
+
+<main id="main">
+  <section id="projects">
+    <div class="section-inner">
+      <p class="journey-hint">Rather than relying only on the tools I was handed, I build my own — here's what that's produced so far.</p>
+
+      <div class="chart-block reveal">
+        <div class="chart-title">Self-Built Tools — Growth Since Day One</div>
+        <div class="chart-caption">Real timeline — internship began May 20, tool-building began June 1</div>
+        <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+          <line x1="70" y1="60" x2="600" y2="60" stroke="var(--paper-line-faint)" stroke-width="1"/>
+          <line x1="70" y1="113" x2="600" y2="113" stroke="var(--paper-line-faint)" stroke-width="1"/>
+          <line x1="70" y1="166" x2="600" y2="166" stroke="var(--paper-line-faint)" stroke-width="1"/>
+          <line x1="70" y1="219" x2="600" y2="219" stroke="var(--line)" stroke-width="1.5"/>
+
+          <text x="60" y="64" text-anchor="end" font-family="Barlow Condensed" font-size="12" fill="var(--line)">3</text>
+          <text x="60" y="117" text-anchor="end" font-family="Barlow Condensed" font-size="12" fill="var(--line)">2</text>
+          <text x="60" y="170" text-anchor="end" font-family="Barlow Condensed" font-size="12" fill="var(--line)">1</text>
+          <text x="60" y="223" text-anchor="end" font-family="Barlow Condensed" font-size="12" fill="var(--line)">0</text>
+
+          <polyline points="150,219 250,219 550,60" fill="none" stroke="var(--brass)" stroke-width="2.5"/>
+
+          <circle cx="150" cy="219" r="6" fill="var(--ink)" stroke="var(--brass)" stroke-width="2"/>
+          <circle cx="250" cy="219" r="6" fill="var(--ink)" stroke="var(--brass)" stroke-width="2"/>
+          <circle cx="550" cy="60" r="6" fill="var(--brass)" stroke="var(--ink)" stroke-width="2"/>
+
+          <text x="150" y="245" text-anchor="middle" font-family="Barlow Condensed" font-size="13" fill="var(--dark-text)">May 20</text>
+          <text x="250" y="245" text-anchor="middle" font-family="Barlow Condensed" font-size="13" fill="var(--dark-text)">Jun 1</text>
+          <text x="550" y="245" text-anchor="middle" font-family="Barlow Condensed" font-size="13" fill="var(--dark-text)">Jul 7 (Today)</text>
+
+          <text x="150" y="205" text-anchor="middle" font-family="Barlow Condensed" font-size="11" fill="var(--line)">Job starts</text>
+          <text x="250" y="205" text-anchor="middle" font-family="Barlow Condensed" font-size="11" fill="var(--line)">Building starts</text>
+          <text x="550" y="40" text-anchor="middle" font-family="Barlow" font-weight="600" font-size="12" fill="var(--ink)">3 tools shipped in 5 weeks</text>
+        </svg>
+      </div>
+
+      <div class="card-list">
+
+        <div class="card reveal">
+          <div class="card-head">
+            <span class="card-title">RFP Radar — Procurement Intelligence Dashboard</span>
+            <span class="card-code">PRJ-01</span>
+          </div>
+          <p>A React-based internal tool that tracks public-sector procurement activity, giving the sales team earlier visibility into upcoming RFPs across target districts and municipalities.</p>
+          <div class="card-tags"><span class="tag">React</span><span class="tag">Procurement Intel</span><span class="tag">Internal Tool</span></div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-head">
+            <span class="card-title">McKinstry Predict — Competitive Intelligence Dashboard</span>
+            <span class="card-code">PRJ-02</span>
+          </div>
+          <div class="photo-slot card-photo">[ Screenshot — Power BI Dashboard ]</div>
+          <p>Built a Power BI dashboard pulling from USASpending.gov and SAM.gov to surface competitor award history and contract patterns across the territory, with a Python data pipeline feeding it.</p>
+          <div class="card-tags"><span class="tag">Power BI</span><span class="tag">Python</span><span class="tag">Federal Data</span></div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-head">
+            <span class="card-title">City Council Agenda Scanner</span>
+            <span class="card-code">PRJ-03</span>
+          </div>
+          <p>A Python system (<span class="mono">city_board_scan.py</span> / <span class="mono">agenda_pdf_scan.py</span>) that scrapes city council and board agendas across DFW target cities to surface early BD signals — capital projects, bond activity, facility discussions — before they hit an RFP. Supports Legistar, CivicPlus, CivicClerk, and RSS/PDF fallback sources.</p>
+          <div class="card-tags"><span class="tag">Python</span><span class="tag">Web Scraping</span><span class="tag">Public Records</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="section-inner">
+    <div class="section-tag">Contact</div>
+    <h2 class="section-title" style="margin-bottom:1.5rem;">Get in Touch</h2>
+  </div>
+  <div class="contact-grid reveal">
+    <div class="contact-item">
+      <span class="label">Email</span>
+      <a href="mailto:Finn_Rintamaki1@baylor.edu">Finn_Rintamaki1@baylor.edu</a>
+    </div>
+    <div class="contact-item">
+      <span class="label">Phone</span>
+      <a href="tel:+17153501525">715-350-1525</a>
+    </div>
+    <div class="contact-item">
+      <span class="label">LinkedIn</span>
+      <a href="https://www.linkedin.com/in/finn-rintamaki/" target="_blank" rel="noopener">linkedin.com/in/finn-rintamaki</a>
+    </div>
+    <div class="contact-item">
+      <span class="label">Resume</span>
+      <a href="Finn_Rintamaki_Resume.pdf" target="_blank" rel="noopener">Download PDF</a>
+    </div>
+  </div>
+  <p class="footer-note">FINN RINTAMAKI — EPORTFOLIO — BUILT FOR PROSALES / REV 2026.07</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
